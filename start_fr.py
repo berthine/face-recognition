@@ -168,23 +168,23 @@ class ControlWindow(QtGui.QWidget):
         self.save = False
 
 
-        self.start_button = QtGui.QPushButton('Start cam')
+        self.start_button = QtGui.QPushButton('Upaliti kameru')
         self.start_button.clicked.connect(self.startCapture)
         
-        self.start_img = QtGui.QPushButton('View img')
+        self.start_img = QtGui.QPushButton('Ucitati sliku')
         self.start_img.clicked.connect(self.startImage)
 
-        self.update_button = QtGui.QPushButton('Start/Stop update')
+        self.update_button = QtGui.QPushButton('Start/Stop azuriranje')
         self.update_button.clicked.connect(self.updateUser)
 
         # ------ Modification ------ #
-        self.capture_button = QtGui.QPushButton('Add new user')
+        self.capture_button = QtGui.QPushButton('Dodati novog korisnika')
         self.capture_button.clicked.connect(self.addNewUser)
 
-        self.training_button = QtGui.QPushButton('First training...')
+        self.training_button = QtGui.QPushButton('Istrenirajte...')
         self.training_button.clicked.connect(self.training)
 
-        self.testtt = QtGui.QPushButton('Accury')
+        self.testtt = QtGui.QPushButton('Tacnost')
         self.testtt.clicked.connect(self.test)
         # ------ Modification ------ #
 
